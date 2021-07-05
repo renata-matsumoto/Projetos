@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+html{
+    font-family: 'Fredoka One', cursive;
+    --bg-caixa: #4040404f;
+    --bg-image: linear-gradient(to right, rgba(248, 247, 247, 0.837), rgba(255, 255, 255, 0.933)), url(img/background2.jpg);
+    --bg-footer: #404040;
+    --bg-nav: #404040;
+    --color-casco: black;
+    --color-footer: ivory;
+    --color-leg: black;
+    --color-h5: black;
+    --color-text:#2f3e46;
+    --color-nav: ivory;
+   
+}
+
+.main{
+    background-image: var(--bg-image);
+}
+header{
+    background-image: var(--bg-image);
+    display: flex;
+    flex-direction: row;
+    height: 150px;  
+    width: 100%;
+}
+
+#header1{
+    display:flex;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 80px;
+}
+
+#header2{
+    align-items: center;
+    color: #ef476f;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    text-shadow: 2px 2px #2f3e46;
+
+}
+
+header h1{
+    margin-right: 50px;
+}
+
+header button{
+    height: 25px;
+    width: 20px;
+}
+
+
+header img{
+    border-radius: 5px;
+    height: 130px;
+    width: 130px;
+    margin-right: 80px;
+}
+
+nav{
+    align-items: center;
+    background-color: var(--bg-nav);
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    justify-content: space-around;
+}
+
+nav a{
+    color: var(--color-nav);
+    font-size: 1.2em;
+    list-style: none;
+    text-decoration: none;
+
+}    
+
+nav button{
+    height: 22px;
+    width: 50px;
+}
+
+.inicio {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+    /* top:50px */
+    width: 100%;
+}
+
+.inicio h2{
+    color: var(--color-text);
+    font-size: 2em;
+    margin-top: 30px;
+}
+
+.inicio h4 {
+    color: var(--color-text);
+    margin-top: 30px;
+}    
+
+
+.inicio input{
+    box-shadow: 2px 3px black;
+    color: var(--color-text);
+    height: 30px;
+    width: 100px;
+}
+
+input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+
+.inicio p {
+    color: var(--color-text);
+    font-size: 1em;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+.inicio label {
+    background: grey;
+    border-radius: 100px;
+    bottom: 15px;
+    cursor: pointer;
+    float: right;
+    height: 27px;
+    margin-top: 30px;
+    position: relative;
+    text-indent: -9999px;   
+    width: 52px;
+}
+
+.inicio label::after{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+input:checked + label {
+    background-color: var(--bg-image);
+}
+
+input:checked + label::after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label:active:after {
+    width: 45px;
+}
+
+.meio{
+    align-items: center;
+    /* background-image: var(--bg-image); */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 180px;
+    width: 100%;
+}
+
+.meio img{
+    border: 1px solid #2f3e46;
+    border-radius: 120px;
+    height: 130px;
+    width: 130px;
+}
+
+.meio h2, p {
+    color: var(--color-text);
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column; 
+    margin-left: 50px;
+}
+
+.meio a{
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.fim{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 180px;
+    justify-content: center;
+    width: 100%;
+}
+
+.fim h2, p{
+    color: var(--color-text);
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.fim a{
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.fim img{
+    border: 1px solid #2f3e46;
+    border-radius: 120px;
+    height: 130px;
+    margin-left: 50px;
+    width: 130px;
+}
+
+footer{
+    align-items: center;
+    background-color: var(--bg-footer);
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8em;
+    height: 60px;
+    width: 100%;
+}
+
+footer img{
+    border-radius: 5px;
+    height: 50px;
+    margin-left: 40px;
+    width: 50px;
+}
+
+footer p{
+    color: var(--color-footer);
+}
+
+/*Página Conversões*/
+
+/* .conversoes1{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;
+    width: 100%;
+} */
+
+.conversoes1 h2, h3{
+    color:var(--color-text);
+    font-size: 1.5em;
+    margin-top: 30px;
+}
+
+.conversoes_real{
+
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    justify-content: center;
+    width: 100%;
+}  
+
+.leg{
+    color: var(--color-leg);
+    margin-left: 12px;
+    margin-bottom: 15px;
+}
+
+.conversoes_real fieldset{
+    background-color: var(--bg-caixa);
+    margin: auto;
+    margin-bottom: 70px;
+    margin-top: 20px;
+    width: 450px;
+}
+
+.conversoes_real label{
+    color: var(--color-leg);
+    margin-left: 13px;
+}
+
+.conversoes_real h5{
+    color: var(--color-h5);
+    font-size: 1em;
+    margin-left: 13px;
+    margin-top: 15px;
+}
+
+.conversoes_real button {
+    box-shadow: 2px 2px black;
+    height: 23px;
+    width: 100px;
+}
+.conversoes_real p{
+    border: 1px solid gray;
+    height: 25px;
+    margin: 10px;
+    width: 380px;
+
+}
+
+/*Pagina Calculadora*/
+
+.calculadora{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.calculadora h2 {
+    color: var(--color-text);
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.calculadora h3 {
+    color: var(--color-text);
+    font-size: 1.5em;
+    margin-top: 20px;   
+}
+
+.calculadora p {
+    color: var(--color-text);
+    font-size: 1em;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+#casco{
+    border: 2px solid gray;
+    background-color: var(--color-casco);
+    border-radius: 5px;
+    /* margin-bottom: 150px; */
+    padding: 5px;
+}
+
+#visor{
+    background-color: rgb(233, 224, 224);
+    border: 2px solid black;
+    height: 50px;
+    margin-bottom: 10px;
+    width: 262px;
+}
+
+#linha1 input{
+    height: 50px;
+    width: 50px;
+}
+
+#linha2 input{
+    height: 50px;
+    width: 50px;
+}
+
+#linha3 input{
+    height: 50px;
+    width: 50px;
+}
+
+#linha4 input{
+    height: 50px;
+    width: 50px;
+}
+
+ /*WhatsApp*/
+ .whatsApp img{
+    bottom: 90px; 
+    height: 35px; 
+    position: fixed;
+    right: 30px;
+    width: 35px;
+ }
+
