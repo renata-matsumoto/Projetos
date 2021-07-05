@@ -7,7 +7,7 @@
 html{
     font-family: 'Fredoka One', cursive;
     --bg-caixa: #4040404f;
-    --bg-image: linear-gradient(to right, rgba(248, 247, 247, 0.837), rgba(255, 255, 255, 0.933)), url(img/background2.jpg);
+    --bg-image: linear-gradient(to right, rgba(248, 247, 247, 0.837), rgba(255, 255, 255, 0.933)), url(https://storage.googleapis.com/projetocalc.appspot.com/img/background2.jpg);
     --bg-footer: #404040;
     --bg-nav: #404040;
     --color-casco: black;
@@ -170,7 +170,6 @@ label:active:after {
 
 .meio{
     align-items: center;
-    /* background-image: var(--bg-image); */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -248,16 +247,6 @@ footer p{
     color: var(--color-footer);
 }
 
-/*Página Conversões*/
-
-/* .conversoes1{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 150px;
-    justify-content: center;
-    width: 100%;
-} */
 
 .conversoes1 h2, h3{
     color:var(--color-text);
@@ -348,34 +337,38 @@ footer p{
     border: 2px solid gray;
     background-color: var(--color-casco);
     border-radius: 5px;
-    /* margin-bottom: 150px; */
     padding: 5px;
 }
 
 #visor{
     background-color: rgb(233, 224, 224);
     border: 2px solid black;
+    font-size: 25px;
     height: 50px;
     margin-bottom: 10px;
     width: 262px;
 }
 
 #linha1 input{
+    font-size: 20px;
     height: 50px;
     width: 50px;
 }
 
 #linha2 input{
+    font-size: 20px;
     height: 50px;
     width: 50px;
 }
 
 #linha3 input{
+    font-size: 20px;
     height: 50px;
     width: 50px;
 }
 
 #linha4 input{
+    font-size: 20px;
     height: 50px;
     width: 50px;
 }

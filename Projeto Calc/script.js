@@ -23,7 +23,7 @@ const darkMode = {
     colorLeg: "#edf2f4",
     colorH5: "#edf2f4",
     colorText: "#edf6f9",
-    bgImage: "linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(img/background_dark.jpeg)",   
+    bgImage: "linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(https://storage.googleapis.com/projetocalc.appspot.com/img/background_dark.jpeg)",   
   
 }
 
