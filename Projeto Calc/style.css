@@ -7,7 +7,7 @@
 html{
     font-family: 'Fredoka One', cursive;
     --bg-caixa: #4040404f;
-    --bg-image: linear-gradient(to right, rgba(248, 247, 247, 0.837), rgba(255, 255, 255, 0.933)), url(https://storage.googleapis.com/projetocalc.appspot.com/img/background2.jpg);
+    --bg-image: linear-gradient(to right, rgba(248, 247, 247, 0.837), rgba(255, 255, 255, 0.933)), url(img/background2.jpg);
     --bg-footer: #404040;
     --bg-nav: #404040;
     --color-casco: black;
