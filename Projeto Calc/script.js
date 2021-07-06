@@ -65,12 +65,12 @@ converter = () => {
     var opcaoTexto = select.options[select.selectedIndex].text;
     var opcaoValor = select.options[select.selectedIndex].value;
     if(opcaoValor == "dolar"){
-        dolar = r/5.06;
-        document.getElementById("resultado").innerHTML = `${dolar}`;
+        dolar = (r/5.06);
+        document.getElementById("resultado").innerHTML = `${dolar.toFixed(2)}`;
     }
     else if(opcaoValor == "euro"){
-        euro = r/6.00;
-        document.getElementById("resultado").innerHTML = `${euro}`;
+        euro = (r/6.00);
+        document.getElementById("resultado").innerHTML = `${euro.toFixed(2)}`;
     }
     console.log(opcaoTexto); 
     console.log(opcaoValor); 
@@ -84,11 +84,11 @@ convertertemperatura = () => {
     var opcaoValor = select.options[select.selectedIndex].value;
     if(opcaoValor == "fahrenheit"){
         fahrenheit = ((c*9)/5) + 32;
-        document.getElementById("resultadotemperatura").innerHTML = `${fahrenheit}`;
+        document.getElementById("resultadotemperatura").innerHTML = `${fahrenheit.toFixed(2)}`;
     }
     else if(opcaoValor == "kelvin"){
         kelvin = c + 273.15;
-        document.getElementById("resultadotemperatura").innerHTML = `${kelvin}`;
+        document.getElementById("resultadotemperatura").innerHTML = `${kelvin.toFixed(2)}`;
     }
     
     console.log(opcaoTexto); 
